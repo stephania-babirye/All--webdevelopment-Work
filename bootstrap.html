@@ -14,16 +14,26 @@
   .card-text{
     color:blue;
   }
-  .login{
-background-color:#f7f2f3;
-border-color:red;
-width: 500px;
-padding: 20px;
-text-align: center;
-  }
+   
+  
   h1{
-    Color:orange;
+    Color:green;
+    text-align: center;
   }
+  .card{
+    padding: 20px;
+    margin:20px;
+  }
+   h6{
+    color: blue;
+    padding: 20px;
+    text-align: center;
+    font-size: 200%;
+   }
+   .login{
+    padding: 4%;
+   }
+   
   
 </style>
 <body>
@@ -122,62 +132,85 @@ text-align: center;
   
 </div> 
 <!--carousel bar ends-->
-<!--Gutters begins-->
-<div class="container px-4 text-center">
-    <div class="row gx-5">
-      <div class="col">
-       <div class="p-3">
-        <div class="card" style="width: 18rem;">
-          <img src="phone.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">
-            Mobile Banking
-            This is a mobile banking platform that enables you to transact and access banking services using your mobile phone or device anywhere, anytime as long as there is network coverage.
-            </p>
-          </div>
-        </div>
-
-       </div>
-      </div>
-      <div class="col">
-        <div class="p-3"><div class="card" style="width: 18rem;">
-          <img src="money.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Cente Agent
-              Agent banking is simply third party banking. This is where our customers are able to carry out bank transactions at any of our contracted CenteAgents.
-             </p>
-              <button> Locate Agent </button>
-      </div>
-      </div>
-      </div>
-      </div>
-      
+<!---card starts-->
+<h6>Our Digital Tools For Your Banking</h6>
+<div class="card-group">
+  <div class="card">
+    <img src="money.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Mobile Banking</h5>
+      <p class="card-text">This is a mobile banking platform that enables you to transact and access banking services using your mobile phone or device</p>
+     
     </div>
-    <!--Gutters ends-->
-    <!--Account details begins-->
-    <h1>CREATE AN ACCOUNT WITH <img src="efc.png"></h1>
-    <div class="login">
-      <label for="fNAME">FRIST NAME</label> 
-      <input type="text" id="fNAME"name="fname"> <br>
-         </P>
-      <label for="lNAME">LAST NAME</label> 
-      <input type="text" id="LNAME"name="lname" > <br>
-      <p>
-      <label for="email">NIN NUMBER</label> <br>
-      <input type="nin number" id="nin number"name="nin number" > <br>
-     </p>
-     <label for="password">ENTER PASSWORD</label> <br>
-      <input type="password" id="password"name="password" > <br>
-     </p>
-     <label for="phone">phone number</label> <br>
-     <input type="number"id="phone"name="phone"><br>
-     <label for="date of birth">date of birth</label> <br>
-     <input type="date"id="date of birth"name="date of birth"><br>
-    </p>
-    <button type="submit" class="btn btn-primary">Submit
-    </p>
+  </div>
+  <div class="card">
+    <img src="phone.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Centre Agent</h5>
+      <p class="card-text">Agent banking is simply third party banking. This is where our customers are able to carry out bank transactions at any of our contracted  centre Agents</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="bank.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Internet Banking</h5>
+      <p class="card-text">
+        Online banking is a modern way of managing financial accounts and transactions through the internet. It offers the convenience of 24/7 access to banking services without the need to visit a physical branch.</p>
     
     </div>
+  </div>
+</div>
+<!---card ends-->
+   
+    <!--Account details begins-->
+    <h1>CREATE AN ACCOUNT WITH <img src="efc.png"></h1>
+    <!--gutter begins-->
+    <div class="login">
+      <div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+  </div>
+  </div>
+  <div class="col">
+  <input type="text" class="form-control" placeholder="NIN MUMBER" aria-label="NIN NUMBER">
+</div>
+<div class="col">
+  <input type="password" class="form-control" placeholder="ENTER PASSWORD" aria-label="ENTER PASSWORD">
+</div>
+<div>
+<input type="number" class="form-control" placeholder="PHONE NUMBER" aria-label="PHONE NUMBER">
+</div>
+<div>
+  <input type="date" class="form-control" placeholder="ENTER DATE OF BIRTH" aria-label="ENTER DATE OF BIRTH">
+  </div>
+  <div>
+    <input type="d" class="form-control" placeholder="ENTER DATE OF BIRTH" aria-label="ENTER DATE OF BIRTH">
+    </div>
+<!--gutter ends-->
+ 
+</label>
+<div class="button">
+</div>
+<h7>Gender<h7>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    male
+  </label>
+</div>
+  </label>
+  <div class="button">
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    female
+  </label>
+  </div>
+</div>
     <!--Account details ends--> 
   </div>
 
